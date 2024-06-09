@@ -14,7 +14,8 @@ export default function Projects() {
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            As of now, I have built 2 fully functioning apps and this website. But don't worry, there more to come!
+            As of now, I have built 3 fully functioning apps, 1 devops pipeline
+            and this website. But don't worry, there more to come!
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
@@ -23,7 +24,8 @@ export default function Projects() {
               href={project.link}
               target="_blank"
               key={project.image}
-              className="sm:w-1/2 w-100 p-4">
+              className="sm:w-1/2 w-100 p-4"
+            >
               <div className="flex relative">
                 <img
                   alt="gallery"

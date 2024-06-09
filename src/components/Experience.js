@@ -2,7 +2,6 @@
 
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../data";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,29 +11,32 @@ import "react-vertical-timeline-component/style.min.css";
 export default function Experience() {
   const experiences = [
     {
-      title: "DevOps Engineering Intern",
+      title: "DevOps Developer Intern",
       company_name: "IBM",
-      icon: "",
+      icon: "/ibm_logo.jpeg",
       iconBg: "white",
-      date: "May 2022 - August 2022",
+      date: "May 2023 - August 2024",
       points: [
-        "Developing and maintaining web applications using Java Spring and other related technologies.",
-        "Collaborating with cross-functional teams including designers, Business Analysts, and other developers to create high-quality products.",
-        "Implementing scalable REST APIs using Spring framework ensuring robust architechture.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Slashed costs by $120,000+ annually by re-provisioning IBM Cloud assets, leveraging Terraform and Ansible playbooks",
+        "Implemented Python Cronjobs and Bash scripts to configure and optimize VMs and Hyper-Vs for clients, leading to a 20% improvement in system performance.",
+        "Reduced container overhead by 30%, using Docker and Kubernetes to streamline deployment across multiple environments.",
+        "Enhanced operational efficiency by over 60% utilizing Ansible Automation to create and manage YAML playbooks.",
+        "Employed Red Hat Tower to execute playbooks, significantly reducing manual configuration efforts by 45%.",
+        "Authored comprehensive runbooks for 800+ distinct alert types to configure PagerDuty alerts, greatly streamlining incident response processes",
+        "Generated 1000+ internal pages using Markdown, Gatsby Carbon theme, and YAML, overhauling DevOpsdocumentation.",
       ],
     },
     {
-      title: "Software Engineering Intern",
-      company_name: "Tangerine",
-      icon: "",
+      title: "Software Developer Intern",
+      company_name: "Tangerine (Scotiabank)",
+      icon: "/tangerine_logo.jpeg",
       iconBg: "white",
       date: "May 2022 - August 2022",
       points: [
-        "Developing and maintaining web applications using Java Spring and other related technologies.",
-        "Collaborating with cross-functional teams including designers, Business Analysts, and other developers to create high-quality products.",
-        "Implementing scalable REST APIs using Spring framework ensuring robust architechture.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Assisted in migration of legacy monolith code-base to a distributed microservice Backend For Frontend (BFF) architecture pattern using Kotlin and Angular.js for the Tangerine mobile banking engineering department.",
+        "Illustrated reliability through extensive RESTful API testing utilizing Postman and unit testing using Kotest.",
+        "Ensured professional coding practices through utilization of ktLint linter and SonarCube Code Smells refinements.",
+        "Participated in Scrum sprints utilizing JIRA software to resolve tickets and submit deliverables through Git Pull Requests.",
       ],
     },
   ];
@@ -46,9 +48,8 @@ export default function Experience() {
           <h1 className="sm:text-4xl text-white-500 bg-gray-900 text-center text-3xl font-medium title-font mb-4 text-white">
             Work Experience
           </h1>
-          <p className="lg:w-2/3 text-white-500 bg-gray-900 mx-auto leading-relaxed text-base">
-            As of now, I have built 2 fully functioning apps and this website.
-            But don't worry, there more to come!
+          <p className="lg:w-2/3 text-white-500 bg-gray-900 mx-auto leading-relaxed text-base text-center">
+            I have 2 internships under my belt. Always looking for more!
           </p>
 
           <div className="mt-12 flex">
@@ -60,9 +61,13 @@ export default function Experience() {
                   iconStyle={{
                     background: experience.iconBg,
                     borderColor: "#22C55E",
+                    width: "60px",
+                    height: "60px",
+                    margin: "0 auto",
+                    transform: "translateX(-50%)",
                   }}
                   icon={
-                    <div className="flex justify-center items-center w-full h-full ">
+                    <div className="flex justify-center items-center w-full h-full overflow-hidden rounded-full">
                       <img
                         src={experience.icon}
                         alt={experience.company_name}

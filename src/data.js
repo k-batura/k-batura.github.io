@@ -16,7 +16,7 @@ export const projects = [
     link: "https://github.com/k-batura/travel_advisor",
   },
   {
-    title: "This Website",
+    title: "Recursion Simulator [This Website hehe]",
     subtitle: "React, Tailwind CSS and Netlify",
     description:
       "My portfolio website created using advanced React, Tailwind CSS and Netlify for deployment and forms.",
