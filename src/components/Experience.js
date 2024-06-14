@@ -11,7 +11,7 @@ import "react-vertical-timeline-component/style.min.css";
 export default function Experience() {
   const experiences = [
     {
-      title: "DevOps Developer Intern",
+      title: "Developer Intern",
       company_name: "IBM",
       icon: "/ibm_logo.jpeg",
       iconBg: "white",
